@@ -2,14 +2,14 @@ name: Test and Cavelage output.
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@master
+        uses: actions/checkout@main
       - name: Install Dependencies
         run: npm install
       - name: Run Test
