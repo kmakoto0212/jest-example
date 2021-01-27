@@ -1,5 +1,5 @@
 import axios from "axios";
-import { getRequest } from "#/httpRequest";
+import getRequest from "#/httpRequest";
 
 describe("getRequest()", () => {
   let httpRequestGetMock: jest.SpyInstance;
